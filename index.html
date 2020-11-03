@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>GPA Calculator</title>
+</head>
+
+<body>
+  <div class="head-cont ">
+    <h1>GPA Calculator</h1>
+  </div>
+  <div class="out-cont ">
+    <label for="Class">Course Name</label>
+    <input type="text" id="course" name="Class" placeholder="Course ID"><br><br>
+    <label for="Grade">Grade</label>
+    <select id="grade" name="Grade">
+      <option value="-">-</option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+    </select><br><br>
+    <label for="Credits">Credits</label>
+    <input type="number" id="credits" name="Credits" value="0"><br><br>
+    <button type="submit" class="btn-primary btn" name="button" onclick="add()">Add</button>
+  </div>
+  <br><br>
+  <div class="out-cont ">
+    <h3>Grade Card</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Grade</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <br>
+    <button type="submit" class="btn btn-primary btn-md" name="button" onclick="calculate()">Calculate GPA</button>
+    <input type="text" class="ans" name="gpa" value="00">
+  </div>
+</body>
+<script src="index.js" charset="utf-8"></script>
+
+</html>
