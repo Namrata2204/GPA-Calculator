@@ -45,7 +45,7 @@ function calculate() {
     total=total+cred;
   }
   var answer=sum/total;
-  answer=answer.toString();
+  answer=answer.toFixed(3).toString();
   $(".ans").val(answer);
 
 }
